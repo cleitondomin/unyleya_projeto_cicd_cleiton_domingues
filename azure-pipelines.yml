@@ -73,7 +73,7 @@ steps:
 
 - task: Docker@2
   inputs:
-    containerRegistry: 'cleitondomin'
+    containerRegistry: 'HUB DOCKER'
     repository: 'unyleya'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
