@@ -71,5 +71,12 @@ steps:
   inputs:
        artifactName: # 'drop'
 
+- task: Docker@2
+  inputs:
+    containerRegistry: 'cleitondomin'
+    repository: 'unyleya'
+    command: 'buildAndPush'
+    Dockerfile: '**/Dockerfile'
+    tags: 'latest'
  
 
